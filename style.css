@@ -4,89 +4,128 @@
     box-sizing: border-box;
 }
 
-
-
 html, body {
-  margin: 0;
-  padding: 0;
   width: 100%;
+  height: 100%;
   overflow-x: hidden; /* Remove qualquer barra de rolagem horizontal */
 }
 
-
-
 body {
   font-family: 'MedievalSharp', cursive;
+  background-color: #18110F;
 }
+
+/* ===== Sticky footer (sem flexbox/grid) ===== */
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -60px; /* mesmo valor (negativo) da altura do footer */
+}
+
+.push,
+.footer {
+  height: 60px; /* altura exata do rodapé */
+}
+
+.footer {
+  background-color: #000000;
+  text-align: center;
+  color: #F5E6C8;
+  font-family: 'MedievalSharp', cursive;
+  display: table; /* centraliza o texto verticalmente sem flex/grid */
+  width: 100%;
+}
+
+.footer p {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* ===== Cabeçalho / navegação ===== */
 .navegacao header {
-  background-color: #f2f2f2;
+  background-color: #e91313;
   padding: 0;
   text-align: center;
   font-family: 'MedievalSharp', cursive;
-  width: 100vw;
-  height: 100vh;
   position: relative;
   top: 0;
   left: 0;
-
-  /* align-items: center; */
 }
 
-.navegacao h1{
-    font-family: 'MedievalSharp', cursive;
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #9b1010;
+.navegacao h1 {
+  font-family: 'MedievalSharp', cursive;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #F5E6C8;
 }
 
 .navegacao nav {
-  background-color: #333;
-  overflow: hidden;
+  background-color: #000000;
+  overflow: hidden; /* clearfix para os <li> flutuantes */
   font-family: 'MedievalSharp', cursive;
   text-align: center;
-  
 }
+
 .navegacao nav a {
   float: left;
   display: block;
-  color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-family: 'MedievalSharp', cursive;
+  color: #8B0000;
 }
+
 .navegacao nav a:hover {
-  background-color: #ddd;
-  color: black;
-  font-family: 'MedievalSharp', cursive;
+  background-color: #F5E6C8;
+  color: #8B0000;
 }
+
 .navegacao ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  font-family: 'MedievalSharp', cursive;
   display: inline-block;
-  margin: 0;
-  padding: 0;
+  font-family: 'MedievalSharp', cursive;
   text-align: center;
 }
+
 .navegacao ul li {
   display: inline-block;
   margin-right: 10px;
   font-family: 'MedievalSharp', cursive;
+  color: #8B0000;
 }
-.container {
-  margin: 0 auto;
-  padding: 0px;
-  font-family: 'MedievalSharp', cursive;
+
+/* ===== Cards de destaque (sem flexbox/grid) ===== */
+.cards {
+  text-align: center;
+  padding: 30px 10px;
+  overflow: hidden; /* clearfix */
+}
+
+.card {
+  display: inline-block;
+  vertical-align: top;
+  width: 22%;
+  min-width: 180px;
+  margin: 10px 1%;
+  background-color: #2a1c18;
+  border: 1px solid #8B0000;
+  border-radius: 6px;
+  overflow: hidden;
+  color: #F5E6C8;
+}
+
+.card img {
   width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
 }
-.container ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+
+.card h3 {
   font-family: 'MedievalSharp', cursive;
-  display: inline-block; 
-  /* justify-content: center; */
+  padding: 10px 0;
+}
+.cards h1{
+  color: #F5E6C8;;
 }
