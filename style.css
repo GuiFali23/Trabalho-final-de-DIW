@@ -15,6 +15,20 @@ body {
   background-color: #18110F;
 }
 
+.card_destaque{
+  text-align: center;
+  margin: 0;
+  background-color: grey;
+  padding: 80px;
+  border: solid 3px #e91313;
+  font-size: 30px;
+
+}
+.card_destaque h2{
+
+  font-size: 28px;
+}
+
 /* ===== Sticky footer (sem flexbox/grid) ===== */
 .wrapper {
   min-height: 100%;
@@ -94,6 +108,11 @@ body {
   font-family: 'MedievalSharp', cursive;
   color: #8B0000;
 }
+/*-------------------------------------------------------------------------*/
+
+
+
+
 
 /* ===== Cards de destaque (sem flexbox/grid) ===== */
 .cards {
@@ -128,4 +147,54 @@ body {
 }
 .cards h1{
   color: #F5E6C8;;
+}
+
+
+
+
+/*-------------------------------------------*/
+
+.gareth img{
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  float: left;
+  width: 500px;
+  height: auto;
+  border-radius: 200px ;
+  border: solid 3px #e91313;
+}
+.gareth h1{
+  margin-top: 30px;
+  font-size: 30px;
+  color: white;
+  margin-bottom: 15px;
+}
+.gareth p{
+  color: white;
+  font-size: 20px;
+}
+
+
+
+
+
+.bram img{
+  margin-right: 20px;
+  margin-left: 20px;
+  float: left;
+  width: 500px;
+  height: auto;
+  border-radius: 200px ;
+  border: solid 3px #e91313;
+}
+.bram h1{
+  margin-top: 30px;
+  font-size: 30px;
+  color: white;
+  margin-bottom: 15px;
+}
+.bram p{
+  color: white;
+  font-size: 20px;
 }
