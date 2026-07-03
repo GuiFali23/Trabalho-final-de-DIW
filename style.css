@@ -18,6 +18,7 @@ body {
 .card_destaque{
   text-align: center;
   margin: 0;
+  margin-bottom: 15px;
   background-color: grey;
   padding: 80px;
   border: solid 3px #e91313;
@@ -156,49 +157,37 @@ body {
 
 /*--------------------Galeria-----------------------*/
 
-.gareth img{
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  float: left;
-  width: 500px;
+.container_galeria{
   height: auto;
-  border-radius: 200px ;
-  border: solid 3px #e91313;
-}
-.gareth h1{
-  margin-top: 30px;
-  font-size: 30px;
-  color: white;
-  margin-bottom: 15px;
-}
-.gareth p{
-  color: white;
-  font-size: 20px;
 }
 
-
-
-
-
-.bram img{
-  margin-right: 20px;
-  margin-left: 20px;
-  float: left;
-  width: 500px;
-  height: auto;
-  border-radius: 200px ;
-  border: solid 3px #e91313;
+.personagem{
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+    border: solid  #8B0000;
+    margin-bottom: 10px;
 }
-.bram h1{
-  margin-top: 30px;
-  font-size: 30px;
-  color: white;
-  margin-bottom: 15px;
+
+.personagem img{
+    float: left;
+    width: 500px;
+    margin: 20px;
+    border-radius: 200px;
+    border: 3px solid #e91313;
 }
-.bram p{
-  color: white;
-  font-size: 20px;
+
+.personagem h1{
+    color: white;
+    font-size: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.personagem p{
+    color: white;
+    font-size: 20px;
+    text-align: center justify;
 }
 
 
@@ -207,7 +196,7 @@ body {
 
 
 .pratos{
- display: inline-block;
+  display: inline-block;
   vertical-align: top;
   width: 22%;
   min-width: 180px;
