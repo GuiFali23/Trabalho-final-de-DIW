@@ -1,28 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taverna do Dragão</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="navegacao">
-        <header>
-            <h1>Taverna do Dragão</h1>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="cardapio.html">Cardápio</a></li>
-                        <li><a href="galeria.html">Galeria</a></li>
-                        <li><a href="reservas.html">Reservas</a></li>
-                        <li><a href="eventos.html">Eventos</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                    </ul>
-                </nav>
-        </header>
-    </div>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Taverna do Dragão</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="navegacao">
+                <header>
+                    <div class="logo">
+
+                        <img src="img/logo.png" alt="Logo">
+
+                        <h1>Taverna do Dragão Vermelho</h1>
+                    </div>
+
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="cardapio.html">Cardápio</a></li>
+                            <li><a href="galeria.html">Galeria</a></li>
+                            <li><a href="reservas.html">Reservas</a></li>
+                            <li><a href="eventos.html">Eventos</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+
+            <section class="banner-reserva">
+
+
+
+                <div class="card_destaque">
+
+                    <h2>Reserve sua Mesa</h2>
+
+                    <p>Garanta um lugar antes que outro aventureiro o faça.</p>
+                    
+                </div>
+                <img src="img/logo.png" alt="Logo da Taverna">
+            </section>
+
+            <div class="formulario_galeria">
+
+                <h2>Formulário de Reserva</h2>
+
+                <form>
+
+                    <label>Nome Completo</label>
+
+                    <input type="text" required>
+
+                    <label>Email</label>
+
+                    <input type="email" required>
+
+                    <label>Telefone</label>
+
+                    <input type="tel">
+
+                    <label>Quantidade de Pessoas</label>
+
+                    <select>
+
+                        <option>1 Pessoa</option>
+
+                        <option>2 Pessoas</option>
+
+                        <option>3 Pessoas</option>
+
+                        <option>4 Pessoas</option>
+
+                        <option>5 Pessoas</option>
+
+                        <option>6 ou mais</option>
+
+                    </select>
+
+                    <label>Data</label>
+
+                    <input type="date">
+
+                    <label>Horário</label>
+
+                    <input type="time">
+
+                    <label>Mesa</label>
+
+                    <select>
+
+                        <option>Comum</option>
+
+                        <option>Nobre</option>
+
+                        <option>Mesa Real</option>
+
+                    </select>
+
+                    <label>Observações</label>
+
+                    <textarea rows="6"></textarea>
+
+                    <input type="submit" value="Reservar Mesa">
+
+                </form>
+
+            </div>
 
 
 
@@ -30,14 +119,14 @@
 
 
 
-    <div class="wrapper">
-        <div class="push"></div>
-    </div>
+            <div class="push"></div>
 
-    <footer class="footer">
-        <p>&copy; 2026 Meu Site. Todos os direitos reservados.</p>
-    </footer>
-
+            <footer class="footer">
+                <p>&copy; 2026 Taverna do Dragão. Todos os direitos reservados.</p>
+            </footer>
+        </div>
 
 
-</body>
+    </body>
+
+</html>
